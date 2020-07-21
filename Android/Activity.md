@@ -31,7 +31,7 @@
 
 ## 引用控件或布局
 
-每一个activity都与一个layout相关，在代码中用setContentView方法传入一个layout。
+**每一个activity都与一个layout相关**，在代码中用setContentView方法传入一个layout。
 
 在代码中用R.layout.xxxxlayout这样的方式来饮用这个值，在xml中使用"@id/xxx"的方式来引用，其中的R代表res文件夹，所有的布局、values文件应该放在res文件夹下面。
 
@@ -142,4 +142,10 @@ Activity借助Back Stack来管理Activity。
 Create之后就是onStart()，此时可见性从无到有，与之对应的是onStop()，这段时间称作“可见生存期”
 
 onStart()之后为onResume()，这段时间AC与用户可以交互，对应onPause()。称作前台生存期。
+
+
+
+## Bundle
+
+可以用于传递数据。在onCreate
 
